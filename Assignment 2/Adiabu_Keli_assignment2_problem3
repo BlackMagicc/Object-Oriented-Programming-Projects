@@ -1,0 +1,22 @@
+# What's my grade ?! Keli Adiabu - 9/23/2020 - Section 4
+
+ass1 = int(input("Enter assignment #1 grade: "))
+ass2 = int(input("Enter assignment #2 grade: "))
+ass3 = int(input("Enter assignment #3 grade: "))
+
+avg = ((ass1 + ass2 + ass3) / 3)
+quiz = float(input("Enter weekly quizzes grade: "))
+mid = float(input("Enter midterm grade: "))
+final = float(input("Enter final exam grade: "))
+print("Average Assignment Grade: " + str(avg))
+finalGrade = ((avg * 0.25) + (quiz * 0.05) + (mid * 0.25) + (final * 0.45))
+
+isAnA = None
+
+if finalGrade > 95:
+    isAnA = True
+else:
+    isAnA = False
+
+print("Final Grade: " + str(round(finalGrade, 1)))
+print("Is an A? " + str(isAnA))

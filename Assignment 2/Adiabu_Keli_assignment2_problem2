@@ -1,0 +1,20 @@
+# Place Value Madness Keli Adiabu - 9/25/2020 - Section 4
+
+num1 = int(input("Enter number 1: "))
+num2 = int(input("Enter number 2: "))
+
+for i in range(5):
+    val1 = num1 % 10   #gives us first digit on far right
+    val2 = num2 % 10
+    print(val1 + val2)
+    num1 = num1 // 10   #deletes first digit on far right
+    num2 = num2 // 10
+
+
+"""
+num1 = 9012 // 10 # stores first digit
+num2 = 9012 % 10 # gets rid of first digit
+print(num1)
+print(num2)
+
+"""

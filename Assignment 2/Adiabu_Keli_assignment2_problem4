@@ -1,0 +1,16 @@
+# Rounding the hard way! Keli Adiabu - 9/23/2020 - Section 4
+
+x = float(input("Enter a floating number: "))
+
+print(int(x-0.5)+1)
+
+"""
+Logic error: if user inputs float such as 54.6, I need to make sure it rounds up to 55
+Runtime error: I would have gotten an error if I didn't cast x to a float in the beginning
+Syntax error: I wouldn't have been able to print an integer if the user inputted a float and I 
+did not cast it to an integer to cut off the decimal places
+Logic error: If I forgot to add 1 to our x I would miss the round up condition
+Runtime error: If I used the string literal in the print statement the program wouldn't be able
+to run
+
+"""

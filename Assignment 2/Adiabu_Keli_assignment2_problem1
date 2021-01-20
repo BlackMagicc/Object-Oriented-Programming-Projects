@@ -1,0 +1,15 @@
+# PokeMath Keli Adiabu - 9/25/2020 - Section 4
+
+pokemon1 = input("Enter name of first pokemon: ")
+pokemon2 = input("Enter name of second pokemon: ")
+
+x = float(input("Enter x coordinate of first pokemon: "))  # x coordinate of first pokemon
+y = float(input("Enter y coordinate of first pokemon: "))  # y coordinate of first pokemon
+
+x2 = float(input("Enter x coordinate of second pokemon: ")) # x coordinate of second pokemon
+y2 = float(input("Enter y coordinate of second pokemon: ")) # y coordinate of second pokemon
+
+distance = ((((x2 - x) ** 2) + ((y2 - y) ** 2)) ** 0.5)
+
+print("The distance between " + pokemon1 + " and " + pokemon2 + " is " + str(round(distance, 2)) +
+      " inches.")
